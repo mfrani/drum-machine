@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const DisplayWrapper = styled.div`
   color: white;
-  border: 2px grey solid;
+  border: 2px darkgrey solid;
   border-radius: 15px;
-  background-color: rgb(0, 0, 179);
+  background-color: rgb(45, 134, 89);
   width: 350px;
   display: inline-block;
 `;
