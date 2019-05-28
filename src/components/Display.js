@@ -1,11 +1,12 @@
 import React from "react";
-
+import { DisplayWrapper } from "../styles/styles";
 const Display = props => {
   return (
-    <div>
-      <h3>{props.key}</h3>
-      <h3>{props.name}</h3>
-    </div>
+    <DisplayWrapper>
+      <h3>Key pressed</h3>
+      <p>{props.drumkey}</p>
+      <h3>Beat name</h3> <p>{props.name}</p>
+    </DisplayWrapper>
   );
 };
 

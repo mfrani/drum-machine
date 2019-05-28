@@ -1,7 +1,21 @@
 import styled from "styled-components";
 
+const DisplayWrapper = styled.div`
+  color: white;
+  border: 2px grey solid;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 179);
+  width: 350px;
+  display: inline-block;
+`;
+
 const HeaderWrapper = styled.div`
-  background: white;
+  color: white;
+  border: 2px rgb(230, 138, 0) solid;
+  border-radius: 15px;
+  background-color: rgb(255, 163, 26);
+  width: 350px;
+  display: inline-block;
 `;
 
 const KeyContainerRow1 = styled.div`
@@ -10,6 +24,11 @@ const KeyContainerRow1 = styled.div`
   margin: 20px 15px 20px 15px;
 `;
 const KeyContainerRow2 = styled.div`
+  display: inline-block;
+  text-align: center;
+  margin: 20px 15px 20px 15px;
+`;
+const KeyContainerRow3 = styled.div`
   display: inline-block;
   text-align: center;
   margin: 20px 15px 20px 15px;
@@ -44,7 +63,7 @@ const Button = styled.button`
 		0 2px 3px #333;
 	text-shadow: 0px 1px 0px #f5f5f5;}
 
-&:active, .keydown {
+&:active, &.active, .keydown {
 	color: #888;
 	background: #ebeced;
 	margin: 7px 5px 3px;
@@ -73,21 +92,20 @@ const DrumpadWrapper = styled.div`
   border-top-right-radius: 7px 21px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  -webkit-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb,
-    0 10px 30px #ddd;
-  -moz-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb,
-    0 10px 30px #ddd;
-  box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
 `;
 const Wrapper = styled.div`
-  background-color: white;
   height: 880px;
 `;
 
 export {
   KeyContainerRow1,
   KeyContainerRow2,
+  KeyContainerRow3,
   Button,
+  DisplayWrapper,
   DrumpadWrapper,
   HeaderWrapper,
   Wrapper
